@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_action_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_dev">
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:elevation="2dp"
+        android:background="#04aa73"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp">
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="148dp"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/devshuvo"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/img6"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/sourav_das_shuvo_nandroid_developer"
+            android:textColor="#225084" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shuvo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:background="#ffff"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/lay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageButton
+            android:id="@+id/fb"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:background="#fff"
+            android:layout_marginLeft="120dp"
+            android:onClick="fbs"
+            android:clickable="true"
+            android:src="@drawable/fb"
+            />
+
+        <ImageButton
+            android:id="@+id/gm"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:onClick="gms"
+            android:clickable="true"
+            android:src="@drawable/gm"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

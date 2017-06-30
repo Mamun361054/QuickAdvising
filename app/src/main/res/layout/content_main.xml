@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ec2ca"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.cgpacalulator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:elevation="2dp"
+        android:background="#336E7B"
+        android:id="@+id/laymain"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="#336E7B"
+            android:textSize="20dip"
+            android:text="CGPA"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvFinalCPA"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:background="#336E7B"
+            android:textSize="20dip"
+            android:text="0.0"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#336E7B"
+        android:layout_below="@+id/laymain"
+        android:id="@+id/laymain2">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="#336E7B"
+            android:textSize="20dip"
+            android:text="Total Credit"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvfinalCredit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:background="#336E7B"
+            android:textSize="20dip"
+            android:text="0.0"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_below="@+id/laymain2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none">
+
+        <RelativeLayout android:id="@+id/lay13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout android:id="@+id/lay1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="first"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img1"
+                            android:background="#00695C"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="18dp"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:text="Semester 1"
+                            android:textColor="#fff"
+                            android:paddingBottom="25dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:onClick="second"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView android:id="@+id/tx2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img2"
+                            android:background="#303F9F"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#fff"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="25dp"
+                            android:textSize="18dp"
+                            android:text="Semester 2"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:id="@+id/lay2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="third"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:background="#ffffff">
+
+                        <TextView android:id="@+id/tx5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img5"
+                            android:background="#0097A7"
+                            android:gravity="center"
+                            android:text="Semester 3"
+                            android:layout_marginTop="3dp"
+                            android:padding="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="25dp"
+                            android:textSize="18dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie4"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="fourth"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img6"
+                            android:background="#0277BD"
+                            android:gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingBottom="25dp"
+                            android:textSize="18dp"
+                            android:text="Semester 4"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/lay4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="fifth"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img7"
+                            android:background="#00838F"
+                            android:gravity="center"
+                            android:text="Semester 5"
+                            android:paddingBottom="20dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie6"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="sixth"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img7"
+                            android:background="#0091EA"
+                            android:gravity="center"
+                            android:text="Semester 6"
+                            android:paddingBottom="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="18dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/lay3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay4"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie7"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="seventh"
+                        android:layout_marginBottom="2dp"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+
+                        <TextView android:id="@+id/tx3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img3"
+                            android:background="#2E7D32"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="Semester 7"
+                            android:paddingBottom="23dp"
+                            android:textSize="18dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie8"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="eighth"
+                        android:layout_marginBottom="2dp"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+
+                        <TextView android:id="@+id/tx4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img4"
+                            android:background="#6A1B9A"
+                            android:paddingBottom="25dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="Semester 8"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout android:id="@+id/lay5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay3"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie9"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="nineth"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img9"
+                            android:background="#006396"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="Semester 9"
+                            android:paddingBottom="23dp"
+                            android:textSize="20dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie10"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="tenth"
+                        android:layout_marginBottom="2dp"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx10"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img10"
+                            android:background="#011291"
+                            android:paddingBottom="25dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="Semester 10"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/lay6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay5"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie11"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="eleventh"
+                        android:clickable="true"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx11"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img9"
+                            android:background="#2477a1"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="Semester 11"
+                            android:paddingBottom="23dp"
+                            android:textSize="18dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_vie12"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/lays12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:onClick="twelveth"
+                        android:layout_marginBottom="2dp"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:background="#fff">
+
+                        <TextView android:id="@+id/tx12"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/img10"
+                            android:background="#283593"
+                            android:paddingBottom="25dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="Semester 12"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lay6"
+                android:onClick="delall"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/tx15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0097A7"
+                    android:gravity="center"
+                    android:text="Master Clear"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingBottom="25dp"
+                    android:textSize="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lay7">
+
+                <Button
+                    android:id="@+id/help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grading System Info"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:background="#04786c"
+                    android:textColor="@android:color/background_light" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

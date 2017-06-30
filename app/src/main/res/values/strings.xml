@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Quick Advising</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8872420019930849/9954850617</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="subject">
+        <item></item>
+    </string-array>
+
+        <string name="title_activity_first_semester">FirstSemester</string>
+        <string name="title_activity_add_result_first">AddResultFirst</string>
+        <string name="sourav_das_shuvo_nandroid_developer"><b> Sourav Das Shuvo </b> \n <u> Android Developer </u> </string>
+
+    <string name="title_activity_second_semester">SecondSemester</string>
+    <string name="title_activity_add_result_second">AddResultSecond</string>
+    <string name="title_activity_third_semester">ThirdSemester</string>
+    <string name="title_activity_add_result_third">AddResultThird</string>
+    <string name="title_activity_fourth_semester">FourthSemester</string>
+    <string name="title_activity_add_result_fourth">AddResultFourth</string>
+    <string name="title_activity_fifth_semester">FifthSemester</string>
+    <string name="title_activity_add_result_fifth">AddResultFifth</string>
+    <string name="title_activity_sixth_semester">SixthSemester</string>
+    <string name="title_activity_add_result_sixth">AddResultSixth</string>
+    <string name="title_activity_seventh_semester">SeventhSemester</string>
+    <string name="title_activity_add_result_seventh">AddResultSeventh</string>
+    <string name="title_activity_eighth_semester">EighthSemester</string>
+    <string name="title_activity_add_result_eighth">AddResultEighth</string>
+    <string name="title_activity_nineth_semester">NinethSemester</string>
+    <string name="title_activity_add_result_nineth">AddResultNineth</string>
+    <string name="title_activity_tenth_semester">TenthSemester</string>
+    <string name="title_activity_add_result_tenth">AddResultTenth</string>
+    <string name="title_activity_eleventh_semester">EleventhSemester</string>
+    <string name="title_activity_add_result_eleventh">AddResultEleventh</string>
+    <string name="title_activity_twelveth_semester">TwelvethSemester</string>
+    <string name="title_activity_add_result_twelveth">AddResultTwelveth</string>
+
+    <string-array name="GPA">
+
+        <item>4.0</item>
+        <item>3.70</item>
+        <item>3.30</item>
+        <item>3.00</item>
+        <item>2.70</item>
+        <item>2.30</item>
+        <item>2.00</item>
+        <item>1.70</item>
+        <item>1.30</item>
+        <item>1.00</item>
+        <item>0.0</item>
+
+    </string-array>
+
+    <string-array name="Credit">
+
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>5.0</item>
+    </string-array>
+
+</resources>
