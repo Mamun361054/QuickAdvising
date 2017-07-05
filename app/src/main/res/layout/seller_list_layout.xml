@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#311b92"
+    android:layout_marginBottom="1dp"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/seller"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBookName"
+            android:text="Linear Algebra"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAuthor"
+            android:text="Kris Rogard"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:textStyle="italic|bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBookEdition"
+            android:text="9th edition"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            android:textStyle="italic|bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBookPrice"
+            android:text="price: 200 tk"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textStyle="italic|bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="call"
+            android:textColor="#FFF"
+            android:background="#411c99"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate"
+            android:text="06 july 2017,12:45 am"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textStyle="italic|bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

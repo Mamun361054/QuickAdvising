@@ -7,7 +7,7 @@
     android:background="#fff"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.nsu.dorbesh.QuickAdvising.FirstSemester">
+    tools:context="com.nsu.advising.QuickAdvising.FirstSemester">
 
         <LinearLayout
             android:id="@+id/lay11"

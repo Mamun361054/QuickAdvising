@@ -15,6 +15,20 @@
             android:title="My CGPA" />
     </group>
 
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sellerbooklist"
+            android:icon="@drawable/unnamed"
+            android:title="Books For Sell" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sell_book_request"
+            android:icon="@drawable/unnamed"
+            android:title="Sell Your Books" />
+    </group>
+
     <item android:title="Faculties">
         <menu>
             <item
@@ -24,7 +38,7 @@
 
             <item
                 android:id="@+id/account_economics"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Department of Economics" />
 
             <item

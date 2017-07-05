@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.nsu.dorbesh.webview.com.nsu.dorbesh.QuickAdvising.Home">
+    tools:context="com.nsu.advising.advising.com.nsu.dorbesh.QuickAdvising.Home">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

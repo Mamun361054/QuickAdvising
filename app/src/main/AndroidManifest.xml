@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nsu.dorbesh.webview">
+    package="com.nsu.advising.advising">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.nsu.dorbesh.QuickAdvising.Home">
+        <activity android:name="com.nsu.advising.QuickAdvising.Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,141 +19,142 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.MainActivity"
+            android:name="com.nsu.advising.QuickAdvising.MainActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.CgpaActivity"
+            android:name="com.nsu.advising.QuickAdvising.CgpaActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.FirstSemester"
+            android:name="com.nsu.advising.QuickAdvising.FirstSemester"
             android:label="@string/title_activity_first_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultFirst"
+            android:name="com.nsu.advising.QuickAdvising.AddResultFirst"
             android:label="@string/title_activity_add_result_first"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.SecondSemester"
+            android:name="com.nsu.advising.QuickAdvising.SecondSemester"
             android:label="@string/title_activity_second_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultSecond"
+            android:name="com.nsu.advising.QuickAdvising.AddResultSecond"
             android:label="@string/title_activity_add_result_second"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.ThirdSemester"
+            android:name="com.nsu.advising.QuickAdvising.ThirdSemester"
             android:label="@string/title_activity_third_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultThird"
+            android:name="com.nsu.advising.QuickAdvising.AddResultThird"
             android:label="@string/title_activity_add_result_third"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.FourthSemester"
+            android:name="com.nsu.advising.QuickAdvising.FourthSemester"
             android:label="@string/title_activity_fourth_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultFourth"
+            android:name="com.nsu.advising.QuickAdvising.AddResultFourth"
             android:label="@string/title_activity_add_result_fourth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.FifthSemester"
+            android:name="com.nsu.advising.QuickAdvising.FifthSemester"
             android:label="@string/title_activity_fifth_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultFifth"
+            android:name="com.nsu.advising.QuickAdvising.AddResultFifth"
             android:label="@string/title_activity_add_result_fifth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.SixthSemester"
+            android:name="com.nsu.advising.QuickAdvising.SixthSemester"
             android:label="@string/title_activity_sixth_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultSixth"
+            android:name="com.nsu.advising.QuickAdvising.AddResultSixth"
             android:label="@string/title_activity_add_result_sixth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.SeventhSemester"
+            android:name="com.nsu.advising.QuickAdvising.SeventhSemester"
             android:label="@string/title_activity_seventh_semester"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultSeventh"
+            android:name="com.nsu.advising.QuickAdvising.AddResultSeventh"
             android:label="@string/title_activity_add_result_seventh"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.EighthSemester"
+            android:name="com.nsu.advising.QuickAdvising.EighthSemester"
             android:label="@string/title_activity_eighth_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultEighth"
+            android:name="com.nsu.advising.QuickAdvising.AddResultEighth"
             android:label="@string/title_activity_add_result_eighth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.NinethSemester"
+            android:name="com.nsu.advising.QuickAdvising.NinethSemester"
             android:label="@string/title_activity_nineth_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultNineth"
+            android:name="com.nsu.advising.QuickAdvising.AddResultNineth"
             android:label="@string/title_activity_add_result_nineth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.TenthSemester"
+            android:name="com.nsu.advising.QuickAdvising.TenthSemester"
             android:label="@string/title_activity_tenth_semester"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultTenth"
+            android:name="com.nsu.advising.QuickAdvising.AddResultTenth"
             android:label="@string/title_activity_add_result_tenth"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.EleventhSemester"
+            android:name="com.nsu.advising.QuickAdvising.EleventhSemester"
             android:label="@string/title_activity_eleventh_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultEleventh"
+            android:name="com.nsu.advising.QuickAdvising.AddResultEleventh"
             android:label="@string/title_activity_add_result_eleventh"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.TwelvethSemester"
+            android:name="com.nsu.advising.QuickAdvising.TwelvethSemester"
             android:label="@string/title_activity_twelveth_semester"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.nsu.dorbesh.QuickAdvising.AddResultTwelveth"
+            android:name="com.nsu.advising.QuickAdvising.AddResultTwelveth"
             android:label="@string/title_activity_add_result_twelveth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name="com.nsu.dorbesh.QuickAdvising.splashscreen"
+        <activity
+            android:name="com.nsu.advising.QuickAdvising.splashscreen"
             android:label="splash"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.nsu.advising.QuickAdvising.SellerBookList"
+            android:label="booklist"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.nsu.advising.QuickAdvising.SellBooksRequest"></activity>
     </application>
 
 </manifest>

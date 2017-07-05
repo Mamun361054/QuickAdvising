@@ -15,9 +15,9 @@
         <item></item>
     </string-array>
 
-        <string name="title_activity_first_semester">FirstSemester</string>
-        <string name="title_activity_add_result_first">AddResultFirst</string>
-        <string name="sourav_das_shuvo_nandroid_developer"><b> Sourav Das Shuvo </b> \n <u> Android Developer </u> </string>
+    <string name="title_activity_first_semester">FirstSemester</string>
+    <string name="title_activity_add_result_first">AddResultFirst</string>
+    <string name="sourav_das_shuvo_nandroid_developer"><b> Sourav Das Shuvo </b> \n <u> Android Developer </u> </string>
 
     <string name="title_activity_second_semester">SecondSemester</string>
     <string name="title_activity_add_result_second">AddResultSecond</string>
@@ -66,5 +66,7 @@
         <item>4.0</item>
         <item>5.0</item>
     </string-array>
+
+    <string name="getSellerBookList">http://mamunhossain.xyz/quick_advising/getAllSellingBook.php</string>
 
 </resources>
