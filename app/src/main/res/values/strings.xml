@@ -68,5 +68,21 @@
     </string-array>
 
     <string name="getSellerBookList">http://mamunhossain.xyz/quick_advising/getAllSellingBook.php</string>
+    <string name="sellerBookReq">http://mamunhossain.xyz/quick_advising/postSellerBook.php</string>
 
+    <string-array name="depertment">
+        <item>Select your department</item>
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>BBA</item>
+        <item>LL.B</item>
+        <item>ENG</item>
+        <item>ARCH</item>
+        <item>PHAR</item>
+        <item>PHI</item>
+        <item>PSY</item>
+        <item>ETE</item>
+        <item>CIVIL</item>
+        <item>OTHERS</item>
+    </string-array>
 </resources>

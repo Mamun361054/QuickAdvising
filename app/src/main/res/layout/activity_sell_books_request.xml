@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerDept"
+        android:background="@drawable/edit_text_background"
+        android:layout_margin="5dp"
         ></Spinner>
 
     <EditText
@@ -53,7 +55,7 @@
         android:background="@drawable/edit_text_background"
         android:layout_margin="5dp"
         android:inputType="number"
-        android:hint="Your phone number"
+        android:hint="Your Phone Number"
         />
 
     <Button
@@ -61,6 +63,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnPost"
         android:text="post"
+        android:onClick="sentReq"
         android:layout_margin="10dp"
         />
 
