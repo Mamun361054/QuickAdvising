@@ -9,8 +9,7 @@
         android:paddingRight="5dp"
         android:paddingTop="5dp"
         android:orientation="vertical"
-        android:gravity="center_horizontal|center_vertical"
-        tools:context="com.nsu.advising.advising.com.nsu.dorbesh.QuickAdvising.MainActivity">
+        android:gravity="center_horizontal|center_vertical">
 
         <WebView
             android:id="@+id/webView"

@@ -4,8 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.nsu.advising.QuickAdvising.SellerBookList">
 
+    <LinearLayout
+        android:id="@+id/layoutProgressForSeller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical" >
+        <TextView
+            android:id="@+id/textLoading"
+            android:text="loading..."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarForSeller"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerDept"
+        android:background="@drawable/edit_text_background"
+        android:layout_margin="5dp"
+        ></Spinner>
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
