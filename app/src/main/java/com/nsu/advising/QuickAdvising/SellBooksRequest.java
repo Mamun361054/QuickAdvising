@@ -1,5 +1,6 @@
 package com.nsu.advising.QuickAdvising;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -28,6 +30,7 @@ import java.util.Map;
 public class SellBooksRequest extends AppCompatActivity {
 
     private EditText etBname,etBedition,etBautor,etBprice,etBphone;
+    private TextView txtClickHere;
     private Spinner spnDept;
     private String[] dept;
     private String department,date,url;
@@ -43,12 +46,20 @@ public class SellBooksRequest extends AppCompatActivity {
         etBedition = (EditText)findViewById(R.id.etBookEdition);
         etBprice = (EditText)findViewById(R.id.etBookPrice);
         etBphone = (EditText)findViewById(R.id.etBookPhone);
+        txtClickHere=(TextView)findViewById(R.id.clickhere);
         url = getResources().getString(R.string.sellerBookReq);
 
         //post date
         DateFormat dateFormat = new SimpleDateFormat("EEE, d MMM yyyy, HH:mm");
         date = dateFormat.format(Calendar.getInstance().getTime());
-        Toast.makeText(getApplicationContext(),date,Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),date,Toast.LENGTH_SHORT).show();
+
+        txtClickHere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SellBooksRequest.this,SellerBookList.class));
+            }
+        });
 
         ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(this,R.layout.spn_row_layout,R.id.txtDeptRow,dept);
         spnDept.setAdapter(stringArrayAdapter);
@@ -118,6 +129,12 @@ public class SellBooksRequest extends AppCompatActivity {
                     !bookPrice.equalsIgnoreCase("")){
 
                 postRequest(department,bookName,bookAuthor,bookEdition,bookPrice,bookPhone);
+
+                etBname.setText("");
+                etBedition.setText("");
+                etBprice.setText("");
+                etBphone.setText("");
+                etBautor.setText("");
 
             }
         }else {

@@ -118,7 +118,7 @@ public class SellerBookList extends AppCompatActivity {
                         }
                     }
 
-                    adapter = new SellerAdapter(arrayList);
+                    adapter = new SellerAdapter(arrayList,SellerBookList.this);
                     recyclerView.setAdapter(adapter);
 
                     layoutProgress.setVisibility(View.GONE);
@@ -189,7 +189,7 @@ public class SellerBookList extends AppCompatActivity {
                         }
                     }
 
-                    adapter = new SellerAdapter(arrayList);
+                    adapter = new SellerAdapter(arrayList,SellerBookList.this);
                     recyclerView.setAdapter(adapter);
 
                     layoutProgress.setVisibility(View.GONE);
