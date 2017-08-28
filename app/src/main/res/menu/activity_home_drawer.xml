@@ -29,11 +29,18 @@
             android:title="Sell Your Books" />
     </group>
 
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/order_book_request"
+            android:icon="@drawable/unnamed"
+            android:title="Buy New Books" />
+    </group>
+
     <item android:title="Faculties">
         <menu>
             <item
                 android:id="@+id/account_finance"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Department of Accounting and Finance" />
 
             <item
@@ -43,65 +50,65 @@
 
             <item
                 android:id="@+id/account_management"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Department of Management" />
             <item
                 android:id="@+id/account_marketing"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Department of Marketing and\n International Business" />
 
             <item
                 android:id="@+id/archi"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Department of Architecture" />
 
             <item
                 android:id="@+id/civil"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Civil and Environmental Engineering " />
 
             <item
                 android:id="@+id/ece"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Department of ECE" />
             <item
                 android:id="@+id/math"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Mathematics and Physics" />
 
             <item
                 android:id="@+id/english"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="English and Modern Languages" />
 
             <item
                 android:id="@+id/philosophy"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="History and Philosophy" />
 
             <item
                 android:id="@+id/political"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Political Science and Sociology" />
             <item
                 android:id="@+id/law"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Department of Law" />
             <item
                 android:id="@+id/biochemistry"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Biochemistry and Microbiology" />
             <item
                 android:id="@+id/environment"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Environmental Science and Management" />
             <item
                 android:id="@+id/pharma"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Pharmaceutical Sciences" />
             <item
                 android:id="@+id/health"
-                android:icon="@mipmap/dept"
+                android:icon="@drawable/aero"
                 android:title="Public Health"/>
         </menu>
     </item>

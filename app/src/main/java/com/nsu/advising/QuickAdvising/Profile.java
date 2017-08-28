@@ -84,7 +84,7 @@ public class Profile extends Fragment {
             }
         });
         if(isOnline()) {
-            webView.loadUrl("http://rds3.northsouth.edu/index.php/welcome/enter_login");
+            webView.loadUrl("https://rds1.northsouth.edu/index.php/welcome/enter_login");
         } else {
             String summary = "<html><body><font color='red'>No Internet Connection</font></body></html>";
             webView.loadData(summary, "text/html", null);
