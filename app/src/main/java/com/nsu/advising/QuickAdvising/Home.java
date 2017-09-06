@@ -14,11 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.nsu.advising.advising.R;
 
-import java.lang.*;
 import java.util.Calendar;
 
 public class Home extends AppCompatActivity
@@ -254,8 +252,7 @@ public class Home extends AppCompatActivity
         }else if (id == R.id.sell_book_request) {
             startActivity(new Intent(Home.this,SellBooksRequest.class));
         }else if (id == R.id.order_book_request) {
-            //startActivity(new Intent(Home.this,SellBooksRequest.class));
-            Toast.makeText(getApplicationContext(),"Buy Books",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(Home.this,BuyerBookActivity.class));
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

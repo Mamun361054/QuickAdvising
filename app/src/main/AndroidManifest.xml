@@ -160,7 +160,8 @@
 
         <receiver android:name="com.nsu.advising.QuickAdvising.Notification_reciver" />
 
-        <activity android:name="com.nsu.advising.QuickAdvising.BuyerBookActivity"></activity>
+        <activity android:name="com.nsu.advising.QuickAdvising.BuyerBookActivity" />
+        <activity android:name="com.nsu.advising.QuickAdvising.Successful"></activity>
     </application>
 
 </manifest>

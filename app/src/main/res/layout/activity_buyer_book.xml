@@ -1,9 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#311b92"
+    android:fitsSystemWindows="true"
+    >
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.nsu.advising.QuickAdvising.BuyerBookActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy books"
+        android:textColor="#ffff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="  Enter your name "
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/BuyerName"
+        android:background="@drawable/edit_text_background_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:maxLength="20"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="  Enter your phone  number "
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16dp"
+        android:inputType="phone"
+        android:background="@drawable/edit_text_background_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/BuyerNumber"
+        android:maxLines="1"
+        android:maxLength="20"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="  Enter your book name "
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text_background_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/BuybookName"
+        android:maxLines="1"
+        android:maxLength="20"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="  Enter author name "
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text_background_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/BuybookAuthor"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="  Enter book edition "
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="16dp"
+        android:background="@drawable/edit_text_background_2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/BuybookEdition"
+        android:maxLines="1"
+        android:maxLength="20"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/save"
+        android:text="submit"
+        android:onClick="submit"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/save"
+        android:text="back"
+        android:onClick="back_button"
+        />
+
+</LinearLayout>
+    </ScrollView>

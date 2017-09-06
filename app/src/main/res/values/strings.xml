@@ -69,6 +69,7 @@
 
     <string name="getSellerBookList">http://mamunhossain.xyz/quick_advising/getAllSellingBook.php</string>
     <string name="sellerBookReq">http://mamunhossain.xyz/quick_advising/postSellerBook.php</string>
+    <string name="buyerBookReq">http://mamunhossain.xyz/quick_advising/postBuyerbooks.php</string>
 
     <string-array name="depertment">
         <item>Select your department</item>
