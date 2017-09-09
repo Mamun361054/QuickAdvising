@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:background="#fff"
     tools:context="com.nsu.advising.QuickAdvising.Successful">
 
     <TextView
@@ -31,10 +32,31 @@
         />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src=""
+        android:src="@drawable/successful"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="we will contact with you soon. It may take maximum 72 hours for reaching you . Thank you"
+        android:textColor="#041abf"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/save"
+        android:text="ok"
+        android:onClick="ok_button"
+        />
 
 </LinearLayout>

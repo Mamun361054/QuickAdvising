@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nsu.advising.QuickAdvising.chat.ChatFragment;
 import com.nsu.advising.advising.R;
 
 import java.util.Calendar;
@@ -111,6 +112,14 @@ public class Home extends AppCompatActivity
             FragmentTransaction ft = fm.beginTransaction();
             Admission ad = new Admission();
             ft.replace(R.id.fragment_container,ad);
+            ft.commit();
+
+        }else if (id == R.id.action_chat){
+
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ChatFragment ct = new ChatFragment();
+            ft.replace(R.id.fragment_container,ct);
             ft.commit();
 
         }

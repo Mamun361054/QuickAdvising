@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         layoutProgress = (LinearLayout) findViewById(R.id.layoutProgress);
         webView.setVisibility(View.GONE);
         WebSettings settings = webView.getSettings();
-
+        settings.setTextZoom(25);
         //Using JavaScript in WebView, it will enable Javascript support for your website
         settings.setJavaScriptEnabled(true);
 
@@ -79,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         if(isOnline()) {
-            webView.loadUrl("https://docs.google.com/viewerng/viewer?url=http://www.northsouth.edu/assets/files/172-Academic_Calendar.pdf");
+            String pdf = "http://www.northsouth.edu/assets/files/Revised-Academic-Calendar-Fall-2017_7August_17.pdf";
+            webView.loadUrl("http://drive.google.com/viewerng/viewer?embedded=true&url=" + pdf);
         } else {
             String summary = "<html><body><font color='red'>No Internet Connection</font></body></html>";
             webView.loadData(summary, "text/html", null);

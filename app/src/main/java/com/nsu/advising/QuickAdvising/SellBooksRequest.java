@@ -1,8 +1,8 @@
 package com.nsu.advising.QuickAdvising;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,7 +20,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.nsu.advising.advising.R;
 
-import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -57,7 +56,7 @@ public class SellBooksRequest extends AppCompatActivity {
         txtClickHere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SellBooksRequest.this,SellerBookList.class));
+                startActivity(new Intent(SellBooksRequest.this,BuyerBookActivity.class));
             }
         });
 
@@ -129,7 +128,7 @@ public class SellBooksRequest extends AppCompatActivity {
                     !bookPrice.equalsIgnoreCase("")){
 
                 postRequest(department,bookName,bookAuthor,bookEdition,bookPrice,bookPhone);
-
+                startActivity(new Intent(SellBooksRequest.this,SellerBookList.class));
                 etBname.setText("");
                 etBedition.setText("");
                 etBprice.setText("");

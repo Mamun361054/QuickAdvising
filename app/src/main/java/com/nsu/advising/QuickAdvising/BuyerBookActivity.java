@@ -1,5 +1,6 @@
 package com.nsu.advising.QuickAdvising;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -93,6 +94,10 @@ public class BuyerBookActivity extends AppCompatActivity {
                     !BuyerBookEdition.equalsIgnoreCase("")){
 
               buyerPostRequest(BuyerName,BuyerPhone,BuyerBookName,BuyerBookAuthorName,BuyerBookEdition);
+
+                Intent intent = new Intent(BuyerBookActivity.this,Successful.class);
+                intent.putExtra("name",BuyerName);
+                startActivity(intent);
 
                 etBuyerName.setText("");
                 etBuyerPhone.setText("");

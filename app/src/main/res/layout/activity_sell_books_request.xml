@@ -22,6 +22,8 @@
         android:background="@drawable/edit_text_background"
         android:layout_margin="5dp"
         android:hint="Book Name"
+        android:maxLines="1"
+        android:maxLength="30"
         />
     <EditText
         android:layout_width="match_parent"
@@ -30,6 +32,8 @@
         android:background="@drawable/edit_text_background"
         android:layout_margin="5dp"
         android:hint="Author Name"
+        android:maxLines="1"
+        android:maxLength="30"
         />
 
     <EditText
@@ -39,6 +43,8 @@
         android:background="@drawable/edit_text_background"
         android:layout_margin="5dp"
         android:hint="Book Edition"
+        android:maxLines="1"
+        android:maxLength="20"
         />
     <EditText
         android:layout_width="match_parent"
@@ -47,6 +53,8 @@
         android:background="@drawable/edit_text_background"
         android:layout_margin="5dp"
         android:hint="Book Price"
+        android:maxLines="1"
+        android:maxLength="20"
         />
     <EditText
         android:layout_width="match_parent"
@@ -66,12 +74,21 @@
         android:onClick="sentReq"
         android:layout_margin="10dp"
         />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:onClick="back"
+        style="?attr/borderlessButtonStyle"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginTop="10dp"
         >
 
         <TextView
@@ -86,7 +103,7 @@
             android:layout_height="wrap_content"
             android:text=" click here"
             android:id="@+id/clickhere"
-            android:textColor="#ddd"
+            android:textColor="#e40510"
             />
 
     </LinearLayout>

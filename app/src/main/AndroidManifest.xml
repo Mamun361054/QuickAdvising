@@ -13,7 +13,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.nsu.advising.QuickAdvising.Home">
+        <activity android:name="com.nsu.advising.QuickAdvising.Home"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,6 +26,7 @@
         <activity
             android:name="com.nsu.advising.QuickAdvising.MainActivity"
             android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.nsu.advising.QuickAdvising.CgpaActivity"
@@ -121,10 +125,12 @@
         <activity
             android:name="com.nsu.advising.QuickAdvising.TenthSemester"
             android:label="@string/title_activity_tenth_semester"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.nsu.advising.QuickAdvising.AddResultTenth"
             android:label="@string/title_activity_add_result_tenth"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.nsu.advising.QuickAdvising.EleventhSemester"
@@ -156,12 +162,22 @@
             android:label="booklist"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.nsu.advising.QuickAdvising.SellBooksRequest" />
+        <activity android:name="com.nsu.advising.QuickAdvising.SellBooksRequest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            />
 
-        <receiver android:name="com.nsu.advising.QuickAdvising.Notification_reciver" />
+        <receiver android:name="com.nsu.advising.QuickAdvising.Notification_reciver"
+            android:screenOrientation="portrait"
+            />
 
-        <activity android:name="com.nsu.advising.QuickAdvising.BuyerBookActivity" />
-        <activity android:name="com.nsu.advising.QuickAdvising.Successful"></activity>
+        <activity android:name="com.nsu.advising.QuickAdvising.BuyerBookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            />
+        <activity android:name="com.nsu.advising.QuickAdvising.Successful"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "497040150309",
+    "firebase_url": "https://quickchat-3bb45.firebaseio.com",
+    "project_id": "quickchat-3bb45",
+    "storage_bucket": "quickchat-3bb45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497040150309:android:939b7aa36292e930",
+        "android_client_info": {
+          "package_name": "com.nsu.dorbesh.mychatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497040150309-h4pmm4c52dn10o5ivhkd5d6m6tmqq1n5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ecR_jC2IttiZVTn0V7CQ0zjBIl5Z16A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497040150309:android:45d4ba40baf25ed9",
+        "android_client_info": {
+          "package_name": "com.nsu.advising.advising"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497040150309-h4pmm4c52dn10o5ivhkd5d6m6tmqq1n5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ecR_jC2IttiZVTn0V7CQ0zjBIl5Z16A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
