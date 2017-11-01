@@ -41,6 +41,8 @@ public class AccountingFinance extends Fragment {
 
         View view = inflater.inflate(R.layout.account, container, false);
 
+        //adview
+
         MobileAds.initialize(getContext(),"ca-app-pub-8872420019930849~7703143012");
         mAdView = (AdView)view.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
