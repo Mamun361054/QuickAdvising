@@ -44,7 +44,7 @@ public class Philosophy extends android.support.v4.app.Fragment {
 
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        MobileAds.initialize(getContext(),"ca-app-pub-8872420019930849~7703143012");
+        MobileAds.initialize(getContext(),"ca-app-pub-8872420019930849~6658649333");
         mAdView = (AdView)view.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);

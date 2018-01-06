@@ -22,7 +22,7 @@
         />
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="450dp"
+    android:layout_height="300dp"
     android:id="@+id/chat_ScrollView"
     >
     <LinearLayout
@@ -45,11 +45,13 @@
     </LinearLayout>
 </ScrollView>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="bottom"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:layout_gravity="bottom"
         android:layout_marginLeft="3dp"
+        android:orientation="horizontal"
         android:layout_marginRight="3dp">
 
         <EditText
@@ -66,7 +68,6 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_toRightOf="@+id/et_chat"
             android:text="sent"
             android:textSize="20dp"
             android:textColor="#eef522"
@@ -78,6 +79,6 @@
             android:background="@drawable/chat_button"
             android:layout_marginBottom="15dp"
             />
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

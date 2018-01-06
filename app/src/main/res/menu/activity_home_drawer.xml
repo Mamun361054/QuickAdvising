@@ -51,16 +51,16 @@
             <item
                 android:id="@+id/account_management"
                 android:icon="@drawable/aero"
-                android:title="Department of Management" />
+                android:title="Management" />
             <item
                 android:id="@+id/account_marketing"
                 android:icon="@drawable/aero"
-                android:title="Department of Marketing and\n International Business" />
+                android:title="Marketing and Business" />
 
             <item
                 android:id="@+id/archi"
                 android:icon="@drawable/aero"
-                android:title="Department of Architecture" />
+                android:title="Architecture" />
 
             <item
                 android:id="@+id/civil"
